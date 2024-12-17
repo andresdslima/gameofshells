@@ -1,0 +1,12 @@
+#ball {
+  width: 25px;
+  height: 25px;
+  background: url(../../../assets/images/pearl.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+
+  &.hide {
+    display: none;
+  }
+}

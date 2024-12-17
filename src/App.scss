@@ -1,0 +1,72 @@
+.game-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.shells-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  min-height: 150px;
+}
+
+button:not(.shell) {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #bdc3c7;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.lose {
+  color: red;
+}
+
+#settings {
+  background-color: #bdc3c7;
+  color: black;
+  margin-top: 1rem;
+}
+
+.settings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  text-align: center;
+
+  label {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  button {
+    background-color: #bdc3c7;
+    color: black;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+.wrong {
+  filter: grayscale(100%);
+  cursor: not-allowed;
+  pointer-events: none;
+}

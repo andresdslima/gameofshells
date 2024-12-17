@@ -1,0 +1,51 @@
+.shell {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  will-change: transform, top, left;
+  border: 1px solid transparent;
+  background: url(../../../assets/images/shell.png) no-repeat center center;
+  background-size: cover;
+
+  &.shuffling {
+    border: 1px solid white;
+    // border: 1px solid transparent; // Could also add this to make it harder
+  }
+
+  :not(.shuffling) {
+    transform: none;
+    border: 1px solid transparent;
+  }
+}
+
+.shell-0 {
+  top: 45vh;
+  left: 30vw;
+}
+
+.shell-1 {
+  top: 45vh;
+  left: 40vw;
+}
+
+.shell-2 {
+  top: 45vh;
+  left: 50vw;
+}
+
+.shell-3 {
+  top: 45vh;
+  left: 60vw;
+}
+
+.shell-4 {
+  top: 45vh;
+  left: 70vw;
+}
