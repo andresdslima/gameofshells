@@ -1,4 +1,5 @@
 import { GameDiffulty } from "../../types/game";
+import "./styles.scss";
 
 interface SettingsProps {
   difficulty: GameDiffulty;
@@ -28,10 +29,10 @@ export function Settings({
         <option value={GameDiffulty.medium}>Medium</option>
         <option value={GameDiffulty.hard}>Hard</option>
       </select>
-      <label htmlFor="difficulty">Guesses:</label>
+      <label htmlFor="choices">Guesses:</label>
       <select
-        name="difficulty"
-        id="difficulty"
+        name="choices"
+        id="choices"
         onChange={(e) => setChoices(e.target.value as unknown as number)}
         value={choices}
       >
