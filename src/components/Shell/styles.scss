@@ -49,3 +49,25 @@
   top: 45vh;
   left: 70vw;
 }
+
+@media (max-width: 425px) {
+  .shell-0 {
+    left: 10vw;
+  }
+
+  .shell-1 {
+    left: 27vw;
+  }
+
+  .shell-2 {
+    left: 44vw;
+  }
+
+  .shell-3 {
+    left: 61vw;
+  }
+
+  .shell-4 {
+    left: 78vw;
+  }
+}
