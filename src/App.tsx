@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { IShell, Shell } from "./components/Shell";
+import { Shell } from "./components/Shell";
 import { getShells, shuffleBall } from "./utils/shells";
 import { GameDiffulty } from "./types/game";
 import { GAME_ROUNDS, INITIAL_MESSAGE } from "./settings/settings";
@@ -61,7 +61,7 @@ export default function App() {
   };
 
   function resetShells() {
-    SHELLS.forEach((shell: IShell) => {
+    SHELLS.forEach((shell) => {
       const shellElement = document.getElementById(`shell-${shell.id}`);
       shellElement!.classList.remove("shuffling");
       shellElement!.classList.remove("wrong");
@@ -107,7 +107,7 @@ export default function App() {
     <div className="game-container">
       <h1>Game of Shells</h1>
       <div className="shells-container">
-        {SHELLS.map((shell: IShell) => (
+        {SHELLS.map((shell) => (
           <Shell
             key={shell.id}
             index={shell.id}

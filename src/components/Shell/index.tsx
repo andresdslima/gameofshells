@@ -1,11 +1,5 @@
-import { ShellHasBall } from "../../types/game";
 import { Ball } from "../Ball";
 import "./styles.scss";
-
-export interface IShell {
-  id: number;
-  isBall: ShellHasBall;
-}
 
 interface ShellProps {
   index: number;
