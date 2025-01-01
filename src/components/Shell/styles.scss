@@ -16,7 +16,7 @@
 
   &.shuffling {
     border: 1px solid white;
-    // border: 1px solid transparent; // Could also add this to make it harder
+    border: 1px solid transparent; // Could also add this to make it harder
   }
 
   :not(.shuffling) {
