@@ -24,7 +24,7 @@ export default function App() {
   const SHELLS = getShells(difficulty);
   const ballPosition = useRef(shuffleBall(SHELLS.length));
   // useRef maintains the ball's position between renders
-  const harderDifficulty = difficulty == GameDiffulty.hard ? GameDiffulty.hard + 3 : difficulty;
+  const harderDifficulty = difficulty == GameDiffulty.hard ? GameDiffulty.hard + 4 : difficulty;
 
   const startGame = () => {
     setIsGameActive(true);
