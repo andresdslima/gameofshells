@@ -24,6 +24,7 @@ export default function App() {
   const SHELLS = getShells(difficulty);
   const ballPosition = useRef(shuffleBall(SHELLS.length));
   // useRef maintains the ball's position between renders
+  const harderDifficulty = difficulty == GameDiffulty.hard ? GameDiffulty.hard + 1 : difficulty;
 
   const startGame = () => {
     setIsGameActive(true);
@@ -57,7 +58,7 @@ export default function App() {
         setMessage("Make your guess 🤔");
         resetShells();
       }
-    }, 2000 / difficulty);
+    }, 2000 / harderDifficulty); // Controls the shuffle speed
   };
 
   function resetShells() {

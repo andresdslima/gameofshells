@@ -4,5 +4,5 @@
   * - Add a new option to the Settings component;
   * - Add a new ".shell-X" class to the SCSS of Shell component (to position the new shell);
 */
-export const INITIAL_MESSAGE = "Guess where the ball is!";
+export const INITIAL_MESSAGE = "Guess where the pearl is!";
 export const GAME_ROUNDS = 10;
