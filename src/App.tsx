@@ -152,7 +152,7 @@ export default function App() {
           <Settings
             difficulty={difficulty}
             setDifficulty={setDifficulty}
-            choices={choices}
+            choices={difficulty === GameDiffulty.hard ? 1 : choices}
             setChoices={setChoices}
           />
           <button onClick={() => setShowSettings(false)}>X</button>
