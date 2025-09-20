@@ -16,14 +16,14 @@ export default function App() {
   const [message, setMessage] = useState(INITIAL_MESSAGE);
   const [isGameActive, setIsGameActive] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [isDarkMode, setIsDarkmode] = useState(true);
   // Could also implement a dark theme with useReducer or useContext
+  const [isDarkMode, setIsDarkmode] = useState(true);
   const [difficulty, setDifficulty] = useState<GameDiffulty>(GameDiffulty.easy);
-  const [choices, setChoices] = useState(2);
+  const [choices, setChoices] = useState(difficulty === GameDiffulty.hard ? 1 : 2);
   const [winCount, setWinCount] = useState(getWinCounts());
   const SHELLS = getShells(difficulty);
-  const ballPosition = useRef(shuffleBall(SHELLS.length));
   // useRef maintains the ball's position between renders
+  const ballPosition = useRef(shuffleBall(SHELLS.length));
   const harderDifficulty = difficulty == GameDiffulty.hard ? GameDiffulty.hard + 5 : difficulty + 2;
 
   const startGame = () => {

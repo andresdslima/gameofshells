@@ -36,7 +36,7 @@ export function Settings({
         onChange={(e) => setChoices(e.target.value as unknown as number)}
         value={choices}
       >
-        <option value={2}>2</option>
+        {difficulty !== GameDiffulty.hard && <option value={2}>2</option>}
         <option value={1}>1</option>
       </select>
     </div>
